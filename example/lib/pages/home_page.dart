@@ -327,6 +327,8 @@ class _HomePageState extends State<HomePage> {
   // You can also upload the picked image to any server (eg : AWS s3
   // or Firebase) and then return the uploaded image URL.
   Future<String> _onImagePickCallback(File file) async {
+        return "https://i.ytimg.com/vi/CKU8la04tdo/mqdefault.jpg";
+
     // Copies the picked file from temporary cache to applications directory
     final appDocDir = await getApplicationDocumentsDirectory();
     final copiedFile =
